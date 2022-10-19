@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+struct h{
+		char b[19];
+		int a;
+		char c[99];
+};
+int main()
+{
+	struct h d[2];
+	int i;
+	for(i=0;i<3;i++){
+		printf("이름 입력:");
+		scanf("%s",d[i].b);
+		printf("나이 입력:");
+		scanf("%d",&d[i].a);
+		printf("주소 입력:");
+		scanf("%s",d[i].c);
+	}
+	printf("---주소록---\n");
+	for(i=0;i<3;i++){
+		printf("이름:%s\n",d[i].b);
+		printf("나이:%d\n",d[i].a);
+		printf("주소:%s\n",d[i].c);
+	}
+}
